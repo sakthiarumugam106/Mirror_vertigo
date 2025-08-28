@@ -1,9 +1,30 @@
 
+import { useEffect, useState } from 'react'
+
 export default function Navbar() {
+  const [logoAvailable, setLogoAvailable] = useState(false)
+
+  useEffect(() => {
+    const img = new Image()
+    img.onload = () => setLogoAvailable(true)
+    img.onerror = () => setLogoAvailable(false)
+    img.src = '/src/assets/logo/logo.png'
+  }, [])
+
   return (
     <header className="sticky top-0 z-40 bg-primary-700 text-white shadow-md">
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        <a href="#top" className="text-2xl font-extrabold tracking-tight">Vertigo</a>
+        <a href="#top" className="flex items-center gap-3">
+          {logoAvailable ? (
+            <img
+              src="/src/assets/logo/logo.png"
+              alt="Vertigo logo"
+              className="h-9 w-auto"
+            />
+          ) : (
+            <span className="text-2xl font-extrabold tracking-tight">Vertigo</span>
+          )}
+        </a>
         <nav className="hidden md:flex items-center gap-6 text-sm font-semibold">
           <a href="#courses" className="hover:text-primary-200">Courses</a>
           <a href="#testimonials" className="hover:text-primary-200">Testimonials</a>
