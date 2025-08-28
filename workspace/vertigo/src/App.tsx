@@ -6,6 +6,7 @@ import Courses from './components/Courses'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Gallery from './components/Gallery'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Hero />
       <Courses />
+      <Gallery />
       <Testimonials />
       <Contact />
       <Footer />
