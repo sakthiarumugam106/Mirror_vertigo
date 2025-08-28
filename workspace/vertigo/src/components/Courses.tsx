@@ -1,4 +1,3 @@
-import React from 'react'
 
 const courses = [
   { title: 'Spoken English', desc: 'Improve fluency, grammar, and confidence.' },
