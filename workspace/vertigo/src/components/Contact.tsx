@@ -11,12 +11,12 @@ export default function Contact() {
   }, [name])
 
   return (
-    <section id="contact" className="py-16 border-t border-slate-200">
+    <section id="contact" className="py-16 bg-white">
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-3xl font-bold text-slate-900">Contact</h2>
-        <p className="mt-2 text-slate-600">Send us a message and we’ll reach out.</p>
+        <h2 className="text-3xl font-extrabold text-slate-900">Contact</h2>
+        <p className="mt-2 text-slate-700">Send us a message and we’ll reach out.</p>
         <div className="mt-8 grid md:grid-cols-2 gap-8">
-          <form onSubmit={(e) => e.preventDefault()} className="rounded-xl border border-slate-200 p-6 bg-white">
+          <form onSubmit={(e) => e.preventDefault()} className="rounded-2xl border border-primary-100 p-6 bg-white shadow">
             <label className="block text-sm font-medium text-slate-700">Your Name</label>
             <input
               type="text"
@@ -34,7 +34,7 @@ export default function Contact() {
               </button>
             </div>
           </form>
-          <div className="rounded-xl border border-slate-200 p-6 bg-white">
+          <div className="rounded-2xl border border-primary-100 p-6 bg-white shadow">
             <h3 className="text-lg font-semibold text-slate-900">Reach us</h3>
             <p className="mt-2 text-slate-600 text-sm">Phone: +91 91502 19787</p>
             <p className="mt-1 text-slate-600 text-sm">Email: info@vertigo.example</p>
