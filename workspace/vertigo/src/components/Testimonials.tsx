@@ -1,4 +1,3 @@
-import React from 'react'
 
 const testimonials = [
   { name: 'Aisha', text: 'Vertigo boosted my confidence in English within weeks!' },
